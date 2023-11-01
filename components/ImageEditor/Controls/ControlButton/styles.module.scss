@@ -1,0 +1,55 @@
+@import "@app/styles/common/mixins.scss";
+
+.controlButton {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+
+    background: none;
+    border: 1px solid black;
+
+    &:disabled {
+        color: gray;
+        border: 1px solid gray;
+
+        svg {
+            path {
+                fill: gray;
+                stroke: gray;
+            }
+        }
+    }
+
+    @include hover {
+        &:disabled {
+            cursor: auto;
+        }
+
+        &:not(:disabled) {
+            color: #ff6e40;
+            box-shadow: 0 0 13px 3px #ff6e40;
+
+            svg {
+                path {
+                    fill: #ff6e40;
+                    stroke: #ff6e40;
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        height: 32px;
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "@app/styles/common/mixins.scss";
+
+.baseContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.editorContainer {
+    position: relative;
+}

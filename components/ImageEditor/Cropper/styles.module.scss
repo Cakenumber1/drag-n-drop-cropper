@@ -1,0 +1,28 @@
+@import "@app/styles/common/mixins.scss";
+
+.imageCropper {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 78.5vh;
+    max-height: 78.5vh;
+
+    top: 40px;
+
+    @include tablet {
+        top: 40px;
+
+        min-height: 72.5vh;
+        max-height: 72.5vh;
+    }
+
+    @include mobile {
+        top: 32px;
+
+        min-height: 70.5vh;
+        max-height: 70.5vh;
+    }
+}

@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(78.5vh + 50px + 40px);
+    padding: 50px 10% 0;
+
+
+    @include tablet {
+        height: calc(72.5vh + 50px + 40px);
+    }
+
+    @include mobile {
+        height: calc(70.5vh + 50px + 32px);
+    }
+}
